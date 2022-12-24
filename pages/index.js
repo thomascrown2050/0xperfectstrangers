@@ -1,3 +1,4 @@
+//https://nader.mirror.xyz/i6ry1Mxez53z91ef375sMe2rO1NvK2ipACyzKA4SR9g
 import React, { useState } from 'react'
 import { ethers } from 'ethers'
 import Web3Modal from 'web3modal'
@@ -178,18 +179,6 @@ if(is_name_undefined==="undefined"){
   nft_collection_name = userNFTs["ownedNfts"][i]["contractMetadata"]["openSea"]["collectionName"];
   nft_collection_symbol = "No symbol";
 }
-
-/*
-if(nft_collection_name!=="undefined"&&nft_collection_name!=""){
-}
-else if(nft_collection_name==="undefined"||nft_collection_name==""){
-nft_collection_name = userNFTs["ownedNfts"][i]["contractMetadata"]["openSea"]["collectionName"];
-nft_collection_symbol = "No symbol";
-}else{
-nft_collection_name = "Not available";
-nft_collection_symbol = "No symbol";
-}
-*/
 
 var nft_collection_presented = nft_collection_name + " ("+nft_collection_symbol+")";
 
